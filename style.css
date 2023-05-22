@@ -206,6 +206,13 @@ footer{
       bottom:0;
       padding: 20px;
     }
+    .socials ul{
+        margin: 0;
+        padding: 0;
+    }
+    .socials ul li{
+        transform: translateX(16px);
+    }
     .socials ul li a {
         width: 49px;
         height: 49px;
@@ -215,5 +222,20 @@ footer{
       }
       .socials ul li a .icon {
         transform: translateY(-16px);
+      }
+  }
+  @media screen and (max-width:350px) {
+    .socials ul li{
+        transform: translateX(10px);
+    }
+    .socials ul li a {
+        width: 39px;
+        height: 39px;
+        line-height: 80px;
+        font-size: 29px;
+        margin: 0 0 0 20px;
+      }
+      .socials ul li a .icon {
+        transform: translateY(-22px);
       }
   }
