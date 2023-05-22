@@ -71,8 +71,9 @@ sbtn.addEventListener("click",()=>{
                 throw new Error(res.statusText)
             }
             let data = await res.json();
-            newdata=data.filter((value)=>{
+            let newdata=data.filter((value)=>{
             // alert("reached this point")
+            alert(value.site);
             return value.site.includes(search);
             })
                 inserting(newdata);
