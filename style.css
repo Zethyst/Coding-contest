@@ -197,3 +197,19 @@ footer{
   .socials ul li:nth-child(5) a:before {
     background: #FFFC00;
   }
+  @media screen and (max-width:500px) {
+    footer{
+      width: 100%;
+      bottom:0;
+    }
+    .socials ul li a {
+        width: 49px;
+        height: 49px;
+        line-height: 80px;
+        font-size: 29px;
+        margin: 0 20px;
+      }
+      .socials ul li a .icon {
+        transform: translateY(-16px);
+      }
+  }
