@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .containerJUMBO{
     display: flex;
     width: 100%;
@@ -124,7 +127,7 @@ footer{
     justify-content: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-55%, -50%);
   }
   
   .socials ul li {
@@ -199,15 +202,16 @@ footer{
   }
   @media screen and (max-width:500px) {
     footer{
-      width: 90%;
+      width: 100%;
       bottom:0;
+      padding: 20px;
     }
     .socials ul li a {
         width: 49px;
         height: 49px;
         line-height: 80px;
         font-size: 29px;
-        margin: 0 20px;
+        margin: 0 0 0 20px;
       }
       .socials ul li a .icon {
         transform: translateY(-16px);
