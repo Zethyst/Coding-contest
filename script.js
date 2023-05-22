@@ -72,7 +72,7 @@ sbtn.addEventListener("click",()=>{
             }
             let data = await res.json();
             newdata=data.filter((value)=>{
-            alert("reached this point")
+            // alert("reached this point")
             return value.site.includes(search);
             })
                 inserting(newdata);
