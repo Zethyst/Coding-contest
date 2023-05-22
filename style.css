@@ -199,7 +199,7 @@ footer{
   }
   @media screen and (max-width:500px) {
     footer{
-      width: 100%;
+      width: 90%;
       bottom:0;
     }
     .socials ul li a {
