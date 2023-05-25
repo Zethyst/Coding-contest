@@ -8,7 +8,7 @@ Elevate your coding game, connect with fellow enthusiasts, and embark on a thril
 <h3>📌 Technology Stack:</h3>
 
 <p>
-Front-End: HTML5, CSS3, JavaScript
+Front-End: HTML5, CSS3, JavaScript<br>
 API: https://kontests.net/api/v1/all
 </p>
 <div align = "center">
