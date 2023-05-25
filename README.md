@@ -5,6 +5,12 @@ ContestHub is a groundbreaking website that leverages the power of the Fetch API
 Stay ahead of the competition with real-time updates on the latest coding contests, effortlessly gathered and organized by ContestHub's sophisticated Fetch API integration. Unleash your coding prowess, expand your skills, and elevate your coding journey with ContestHub as your trusted companion.
 
 Elevate your coding game, connect with fellow enthusiasts, and embark on a thrilling adventure through the vast landscape of coding competitions – all made possible with ContestHub's innovative Fetch API-driven platform.</p>
+<h3>📌 Technology Stack:</h3>
+
+<p>
+Front-End: HTML5, CSS3, JavaScript
+API: https://kontests.net/api/v1/all
+</p>
 <div align = "center">
 <img src="https://forthebadge.com/images/badges/validated-html5.svg">
 <img src="https://forthebadge.com/images/badges/uses-css.svg">
