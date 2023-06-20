@@ -1,41 +1,41 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.containerJUMBO{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+.containerJUMBO {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
-.jumbotron{
-    width: 70%;
-    background-color: rgb(234, 231, 231);
-    padding: 20px;
-    border-radius: 12px;
-    margin: 20px;
+.jumbotron {
+  width: 70%;
+  background-color: rgb(234, 231, 231);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
 }
-.nv{
-    backdrop-filter: blur(12px) saturate(100%);
-    -webkit-backdrop-filter: blur(16px) saturate(100%);
+.nv {
+  background: transparent;
+  backdrop-filter: blur(10px) saturate(100%);
+  -webkit-backdrop-filter: blur(16px) saturate(100%);
 }
-header{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.fa-solid{
-    transform: scale(1.2);
+.fa-solid {
+  transform: scale(1.2);
 }
-#containercards{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 0 20px 0 20px;
+#containercards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0 20px 0 20px;
 }
-
 
 /* Cool infinite background scrolling animation.
  * Twitter: @kootoopas
@@ -89,7 +89,8 @@ body {
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   text-align: center;
   /* img size is 50x50 */
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 0.92s infinite;
   /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 0.92s infinite;
@@ -103,139 +104,183 @@ body {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-footer{
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    height: 15vh;
-    padding: 10px;
-    /* background-color: rgba(46,46,51,255); */
-    background-color: rgba(44,47,65,255);
+footer {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 15vh;
+  padding: 10px;
+  /* background-color: rgba(46,46,51,255); */
+  background-color: rgba(44, 47, 65, 255);
 }
-.socials{
-    position: relative;
-    opacity: 0.89;
+.socials {
+  position: relative;
+  opacity: 0.89;
+}
+.socials ul {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+}
+
+.socials ul li {
+  list-style: none;
+}
+
+.socials ul li a {
+  width: 69px;
+  height: 69px;
+  background-color: ghostwhite;
+  text-align: center;
+  line-height: 80px;
+  font-size: 29px;
+  margin: 0 20px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 2.9px solid #fff;
+  z-index: 1;
+}
+
+.socials ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+  transform: translateY(-5px);
+}
+
+.socials ul li a:hover .icon {
+  color: #fff;
+  /* transform: rotateY(360deg); */
+}
+.socials ul li:nth-child(5):hover .icon {
+  color: black;
+}
+
+.socials ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.socials ul li a:hover:before {
+  top: 0;
+}
+
+.socials ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.socials ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.socials ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.socials ul li:nth-child(4) a:before {
+  background: #d62976;
+}
+.socials ul li:nth-child(5) a:before {
+  background: #fffc00;
+}
+/* Center the loader */
+#loader {
+  width: 6rem;
+  height: 6rem;
+  border: 15px solid #f3f3f3;
+  border-top: 12px solid #3498db;
+  border-radius: 100%;
+  margin: 2rem auto;
+  visibility: visible;
+  animation: spin 1s infinite linear;
+}
+.display{
+  visibility: hidden;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
   }
   .socials ul {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -50%);
+    margin: 0;
+    padding: 0;
   }
-  
   .socials ul li {
-    list-style: none;
+    transform: translateX(16px);
   }
-  
   .socials ul li a {
-    width: 69px;
-    height: 69px;
-    background-color:ghostwhite;
-    text-align: center;
+    width: 49px;
+    height: 49px;
     line-height: 80px;
     font-size: 29px;
-    margin: 0 20px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 2.9px solid #fff;
-    z-index: 1;
+    margin: 0 0 0 20px;
   }
-  
   .socials ul li a .icon {
-    position: relative;
-    color: #262626;
-    transition: .5s;
-    z-index: 3;
-    transform: translateY(-5px);
+    transform: translateY(-16px);
   }
-  
-  .socials ul li a:hover .icon {
-    color: #fff;
-    /* transform: rotateY(360deg); */
+}
+@media screen and (max-width: 350px) {
+  .socials ul li {
+    transform: translateX(10px);
   }
-  .socials ul li:nth-child(5):hover .icon {
-    color: black;
+  .socials ul li a {
+    width: 39px;
+    height: 39px;
+    line-height: 80px;
+    font-size: 29px;
+    margin: 0 0 0 20px;
   }
-  
-  .socials ul li a:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: .5s;
-    z-index: 2;
+  .socials ul li a .icon {
+    transform: translateY(-22px);
   }
-  
-  .socials ul li a:hover:before {
-    top: 0;
-  }
-  
-  .socials ul li:nth-child(1) a:before{
-    background: #3b5999;
-  }
-  
-  .socials ul li:nth-child(2) a:before{
-    background: #55acee;
-  }
-  
-  .socials ul li:nth-child(3) a:before {
-    background: #0077b5;
-  }
-  
-  .socials ul li:nth-child(4) a:before {
-    background: #d62976;
-  }
-  .socials ul li:nth-child(5) a:before {
-    background: #FFFC00;
-  }
-  @media screen and (max-width:500px) {
-    footer{
-      width: 100%;
-      bottom:0;
-      padding: 20px;
-    }
-    .socials ul{
-        margin: 0;
-        padding: 0;
-    }
-    .socials ul li{
-        transform: translateX(16px);
-    }
-    .socials ul li a {
-        width: 49px;
-        height: 49px;
-        line-height: 80px;
-        font-size: 29px;
-        margin: 0 0 0 20px;
-      }
-      .socials ul li a .icon {
-        transform: translateY(-16px);
-      }
-  }
-  @media screen and (max-width:350px) {
-    .socials ul li{
-        transform: translateX(10px);
-    }
-    .socials ul li a {
-        width: 39px;
-        height: 39px;
-        line-height: 80px;
-        font-size: 29px;
-        margin: 0 0 0 20px;
-      }
-      .socials ul li a .icon {
-        transform: translateY(-22px);
-      }
-  }
+}

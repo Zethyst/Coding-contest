@@ -43,10 +43,12 @@ async function inserting(data){
         `
     }
     containercards.innerHTML = iHTML;
+    hideLoading();
 }
 // var globaldata=getdata(temp);
 
 async function mainfunc() {
+    displayLoading();
     var response = await fetch(url);
     var data = await response.json();
     inserting(data);
@@ -84,3 +86,19 @@ sbtn.addEventListener("click",()=>{
     }
     filtered();
 })
+
+function displayLoading(){
+    //selecting the loader div
+    const loader=document.querySelector("#loader");
+    //showing loading
+    // loader.classList.add("display");
+    //to stop loading after some time
+    setTimeout(()=>{
+        loader.classList.add("display"); 
+    },5000);
+}
+
+//hiding loading
+function hideLoading(){
+    loader.classList.add("display"); 
+}
