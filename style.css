@@ -226,25 +226,6 @@ footer {
   }
 }
 
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-}
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
 @media screen and (max-width: 500px) {
   footer {
     width: 100%;
